@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="bg" cx="47%" cy="35%" r="64%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity=".42"/>
+      <stop offset="44%" stop-color="#f2cf7b" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </radialGradient>
+    <linearGradient id="screen" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <ellipse cx="600" cy="740" rx="330" ry="46" fill="#000" opacity=".46"/>
+  <g filter="url(#glow)">
+    <path d="M340 210h250c32 0 58 26 58 58v360c0 32-26 58-58 58H340c-32 0-58-26-58-58V268c0-32 26-58 58-58Z" fill="#111827" stroke="#f2cf7b" stroke-width="12"/>
+    <path d="M612 210h250c32 0 58 26 58 58v360c0 32-26 58-58 58H612c-32 0-58-26-58-58V268c0-32 26-58 58-58Z" fill="#0b1020" stroke="#38bdf8" stroke-width="12"/>
+    <path d="M334 270h246v352H334z" fill="url(#screen)" opacity=".92"/>
+    <path d="M624 270h246v352H624z" fill="url(#screen)" opacity=".82"/>
+    <path d="M600 230v430" stroke="#f8e5ae" stroke-width="8" opacity=".8"/>
+  </g>
+</svg>

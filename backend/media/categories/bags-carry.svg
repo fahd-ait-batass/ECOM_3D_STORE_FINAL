@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.55"/>
+      <stop offset="42%" stop-color="#e8c26d" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#181d2b"/>
+      <stop offset="48%" stop-color="#f1d991"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" stop-opacity="0.8"/>
+      <stop offset="44%" stop-color="#34d399" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#05070d" stop-opacity="0.96"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="900" fill="#05070d"/>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <ellipse cx="600" cy="725" rx="330" ry="48" fill="#000" opacity="0.45"/>
+  <g filter="url(#glow)">
+
+    <path d="M390 356c0-90 72-162 210-162s210 72 210 162" fill="none" stroke="#e8c26d" stroke-width="28" stroke-linecap="round"/>
+    <path d="M330 342h540l70 330c8 38-21 74-60 74H320c-39 0-68-36-60-74l70-330Z" fill="#101827" stroke="#e8c26d" stroke-width="12"/>
+    <rect x="488" y="460" width="224" height="118" rx="40" fill="#070b14" stroke="#34d399" stroke-width="7"/>
+  </g>
+  <text x="600" y="805" fill="#f7e7bb" font-family="Arial, Helvetica, sans-serif" font-size="50" text-anchor="middle" font-weight="800">Bags &amp; Carry</text>
+</svg>

@@ -1,0 +1,31 @@
+Hello {{ order.full_name }},
+
+Thank you for your order from {{ store.store_name }}.
+
+Order number: {{ order_number }}
+Status: {{ status_label }}
+Payment method: {{ payment_label }}
+{% if order.tracking_number %}Tracking number: {{ order.tracking_number }}
+{% endif %}
+Items:
+{% for item in items %}- {{ item.quantity }} x {{ item.name }} at {{ item.price }} = {{ item.line_total }}
+{% endfor %}
+
+Subtotal: {{ subtotal }}
+Coupon discount: {{ discount_amount }}
+Delivery: {{ delivery_price }}
+Final total: {{ total_price }}
+
+Delivery details:
+Name: {{ order.full_name }}
+Phone: {{ order.phone }}
+Email: {{ order.email|default:"Not provided" }}
+City: {{ order.city }}
+Address: {{ order.address }}
+
+Need help?
+{{ store.store_name }}
+Phone: {{ store.phone }}
+WhatsApp: {{ store.whatsapp }}
+Email: {{ store.email }}
+Address: {{ store.address }}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <body style="margin:0;background:#070a12;color:#f8fafc;font-family:Arial,sans-serif;">
+    <div style="max-width:680px;margin:0 auto;padding:28px;">
+      <div style="border:1px solid rgba(242,207,123,.32);border-radius:18px;background:#101624;padding:28px;">
+        <p style="color:#f2cf7b;text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin:0 0 8px;">Order update</p>
+        <h1 style="margin:0 0 12px;font-size:28px;">Order {{ order_number }}</h1>
+        <p style="color:#aeb7c7;margin:0 0 22px;">Your {{ store.store_name }} order has been updated.</p>
+
+        <div style="border-radius:14px;background:#0b101c;padding:18px;margin-bottom:22px;">
+          <p style="margin:0 0 8px;"><strong>New status:</strong> {{ status_label }}</p>
+          <p style="margin:0 0 8px;"><strong>Updated:</strong> {{ updated_at }}</p>
+          {% if order.tracking_number %}
+            <p style="margin:0;"><strong>Tracking number:</strong> {{ order.tracking_number }}</p>
+          {% endif %}
+        </div>
+
+        <div style="border-radius:14px;background:#0b101c;padding:18px;">
+          <p style="display:flex;justify-content:space-between;margin:0 0 8px;"><span>Payment</span><strong>{{ payment_label }}</strong></p>
+          <p style="display:flex;justify-content:space-between;margin:0;font-size:20px;color:#f2cf7b;"><span>Total</span><strong>{{ total_price }}</strong></p>
+        </div>
+
+        <p style="color:#aeb7c7;margin-top:26px;">
+          Need help? Contact {{ store.store_name }} at {{ store.phone }},
+          WhatsApp {{ store.whatsapp }}, or {{ store.email }}.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

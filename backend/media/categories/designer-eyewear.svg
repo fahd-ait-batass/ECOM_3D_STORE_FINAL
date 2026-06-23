@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.55"/>
+      <stop offset="42%" stop-color="#f9d987" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#181d2b"/>
+      <stop offset="48%" stop-color="#f1d991"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" stop-opacity="0.8"/>
+      <stop offset="44%" stop-color="#06b6d4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#05070d" stop-opacity="0.96"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="900" fill="#05070d"/>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <ellipse cx="600" cy="725" rx="330" ry="48" fill="#000" opacity="0.45"/>
+  <g filter="url(#glow)">
+
+    <path d="M255 430c104-56 232-58 345-4 113-54 241-52 345 4-34 152-242 166-315 18-9-18-21-28-30-28s-21 10-30 28c-73 148-281 134-315-18Z" fill="#101827" stroke="#f9d987" stroke-width="13"/>
+    <path d="M320 444c70-24 145-18 205 12-49 78-143 88-205-12ZM675 456c60-30 135-36 205-12-62 100-156 90-205 12Z" fill="#06b6d4" opacity="0.42"/>
+    <path d="M250 400l-84-70M950 400l84-70" stroke="#06b6d4" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <text x="600" y="805" fill="#f7e7bb" font-family="Arial, Helvetica, sans-serif" font-size="50" text-anchor="middle" font-weight="800">Designer Eyewear</text>
+</svg>

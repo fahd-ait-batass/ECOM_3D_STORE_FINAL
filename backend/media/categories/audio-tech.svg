@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.55"/>
+      <stop offset="42%" stop-color="#e9c46a" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#181d2b"/>
+      <stop offset="48%" stop-color="#f1d991"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" stop-opacity="0.8"/>
+      <stop offset="44%" stop-color="#8b5cf6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#05070d" stop-opacity="0.96"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="900" fill="#05070d"/>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <ellipse cx="600" cy="725" rx="330" ry="48" fill="#000" opacity="0.45"/>
+  <g filter="url(#glow)">
+
+    <path d="M360 460c0-162 98-270 240-270s240 108 240 270" fill="none" stroke="#e9c46a" stroke-width="42" stroke-linecap="round"/>
+    <rect x="268" y="430" width="160" height="228" rx="58" fill="#101827" stroke="#8b5cf6" stroke-width="10"/>
+    <rect x="772" y="430" width="160" height="228" rx="58" fill="#101827" stroke="#8b5cf6" stroke-width="10"/>
+    <circle cx="600" cy="494" r="54" fill="none" stroke="#e9c46a" stroke-width="10"/>
+  </g>
+  <text x="600" y="805" fill="#f7e7bb" font-family="Arial, Helvetica, sans-serif" font-size="50" text-anchor="middle" font-weight="800">Audio &amp; Tech</text>
+</svg>

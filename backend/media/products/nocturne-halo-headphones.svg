@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="bg" cx="52%" cy="34%" r="68%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.42"/>
+      <stop offset="45%" stop-color="#d7b46a" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#151b29"/>
+      <stop offset="48%" stop-color="#f2d98f"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" stop-opacity="0.82"/>
+      <stop offset="44%" stop-color="#8b5cf6" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#05070d" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="900" fill="#05070d"/>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="180" cy="205" r="5" fill="#8b5cf6" opacity="0.65"/>
+  <circle cx="1018" cy="168" r="4" fill="#d7b46a" opacity="0.6"/>
+  <circle cx="965" cy="612" r="7" fill="#8b5cf6" opacity="0.35"/>
+  <path d="M170 650C350 550 850 540 1030 650" fill="none" stroke="#8b5cf6" stroke-width="3" opacity="0.32"/>
+  <path d="M180 265C410 150 770 145 1015 272" fill="none" stroke="#d7b46a" stroke-width="2" opacity="0.24"/>
+  <ellipse cx="600" cy="740" rx="360" ry="54" fill="#000" opacity="0.45"/>
+  <g filter="url(#glow)">
+
+    <path d="M330 470c0-188 110-318 270-318s270 130 270 318" fill="none" stroke="#d7b46a" stroke-width="48" stroke-linecap="round"/>
+    <path d="M390 455c0-128 78-220 210-220s210 92 210 220" fill="none" stroke="#0b1020" stroke-width="34" stroke-linecap="round"/>
+    <rect x="255" y="420" width="170" height="260" rx="62" fill="#101827" stroke="#8b5cf6" stroke-width="10"/>
+    <rect x="775" y="420" width="170" height="260" rx="62" fill="#101827" stroke="#8b5cf6" stroke-width="10"/>
+    <rect x="302" y="482" width="78" height="135" rx="34" fill="#1f2937" stroke="#d7b46a" stroke-width="5"/>
+    <rect x="820" y="482" width="78" height="135" rx="34" fill="#1f2937" stroke="#d7b46a" stroke-width="5"/>
+    <path d="M448 188c83-58 221-58 304 0" fill="none" stroke="#8b5cf6" stroke-width="7" opacity="0.4"/>
+
+  </g>
+  <text x="600" y="820" fill="#f7e7bb" font-family="Arial, Helvetica, sans-serif" font-size="40" text-anchor="middle" font-weight="800" letter-spacing=".5">Nocturne Halo Headphones</text>
+</svg>

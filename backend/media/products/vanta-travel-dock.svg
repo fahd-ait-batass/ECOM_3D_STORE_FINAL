@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="bg" cx="52%" cy="34%" r="68%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.42"/>
+      <stop offset="45%" stop-color="#d7b46a" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#151b29"/>
+      <stop offset="48%" stop-color="#f2d98f"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" stop-opacity="0.82"/>
+      <stop offset="44%" stop-color="#34d399" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#05070d" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="900" fill="#05070d"/>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="180" cy="205" r="5" fill="#34d399" opacity="0.65"/>
+  <circle cx="1018" cy="168" r="4" fill="#d7b46a" opacity="0.6"/>
+  <circle cx="965" cy="612" r="7" fill="#34d399" opacity="0.35"/>
+  <path d="M170 650C350 550 850 540 1030 650" fill="none" stroke="#34d399" stroke-width="3" opacity="0.32"/>
+  <path d="M180 265C410 150 770 145 1015 272" fill="none" stroke="#d7b46a" stroke-width="2" opacity="0.24"/>
+  <ellipse cx="600" cy="740" rx="360" ry="54" fill="#000" opacity="0.45"/>
+  <g filter="url(#glow)">
+
+    <path d="M340 300h520l80 235c10 30-12 62-44 62H300c-32 0-54-32-44-62l84-235Z" fill="#101827" stroke="#d7b46a" stroke-width="12"/>
+    <path d="M386 346h430l46 145H334l52-145Z" fill="#05070d" stroke="#34d399" stroke-width="7" opacity="0.95"/>
+    <circle cx="432" cy="548" r="24" fill="none" stroke="#d7b46a" stroke-width="8"/>
+    <circle cx="516" cy="548" r="24" fill="none" stroke="#34d399" stroke-width="8"/>
+    <rect x="600" y="526" width="168" height="42" rx="21" fill="#172033" stroke="#d7b46a" stroke-width="5"/>
+    <path d="M790 344c80-70 170-35 170 45 0 70-80 105-150 63" fill="none" stroke="#34d399" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+
+  </g>
+  <text x="600" y="820" fill="#f7e7bb" font-family="Arial, Helvetica, sans-serif" font-size="40" text-anchor="middle" font-weight="800" letter-spacing=".5">Vanta Travel Dock</text>
+</svg>

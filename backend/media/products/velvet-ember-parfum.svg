@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="bg" cx="52%" cy="34%" r="68%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.42"/>
+      <stop offset="45%" stop-color="#f4b86a" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#151b29"/>
+      <stop offset="48%" stop-color="#f2d98f"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" stop-opacity="0.82"/>
+      <stop offset="44%" stop-color="#f97316" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#05070d" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="900" fill="#05070d"/>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="180" cy="205" r="5" fill="#f97316" opacity="0.65"/>
+  <circle cx="1018" cy="168" r="4" fill="#f4b86a" opacity="0.6"/>
+  <circle cx="965" cy="612" r="7" fill="#f97316" opacity="0.35"/>
+  <path d="M170 650C350 550 850 540 1030 650" fill="none" stroke="#f97316" stroke-width="3" opacity="0.32"/>
+  <path d="M180 265C410 150 770 145 1015 272" fill="none" stroke="#f4b86a" stroke-width="2" opacity="0.24"/>
+  <ellipse cx="600" cy="740" rx="360" ry="54" fill="#000" opacity="0.45"/>
+  <g filter="url(#glow)">
+
+    <rect x="510" y="164" width="180" height="112" rx="34" fill="#101827" stroke="#f4b86a" stroke-width="10"/>
+    <rect x="472" y="252" width="256" height="92" rx="30" fill="url(#metal)" stroke="#f9e8b6" stroke-width="7"/>
+    <rect x="404" y="326" width="392" height="382" rx="94" fill="url(#glass)" stroke="#f4b86a" stroke-width="11"/>
+    <rect x="470" y="430" width="260" height="158" rx="44" fill="#080d18" stroke="#f97316" stroke-width="7" opacity="0.86"/>
+    <path d="M500 380c78-30 122-30 200 0M500 635c78 38 122 38 200 0" fill="none" stroke="#fff1c2" stroke-width="7" opacity="0.46"/>
+    <circle cx="600" cy="506" r="58" fill="none" stroke="#f4b86a" stroke-width="12"/>
+    <path d="M560 506h80" stroke="#f97316" stroke-width="8" stroke-linecap="round"/>
+
+  </g>
+  <text x="600" y="820" fill="#f7e7bb" font-family="Arial, Helvetica, sans-serif" font-size="40" text-anchor="middle" font-weight="800" letter-spacing=".5">Velvet Ember Parfum</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="bg" cx="52%" cy="34%" r="68%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.42"/>
+      <stop offset="45%" stop-color="#f1d087" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#151b29"/>
+      <stop offset="48%" stop-color="#f2d98f"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" stop-opacity="0.82"/>
+      <stop offset="44%" stop-color="#8b5cf6" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#05070d" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="900" fill="#05070d"/>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="180" cy="205" r="5" fill="#8b5cf6" opacity="0.65"/>
+  <circle cx="1018" cy="168" r="4" fill="#f1d087" opacity="0.6"/>
+  <circle cx="965" cy="612" r="7" fill="#8b5cf6" opacity="0.35"/>
+  <path d="M170 650C350 550 850 540 1030 650" fill="none" stroke="#8b5cf6" stroke-width="3" opacity="0.32"/>
+  <path d="M180 265C410 150 770 145 1015 272" fill="none" stroke="#f1d087" stroke-width="2" opacity="0.24"/>
+  <ellipse cx="600" cy="740" rx="360" ry="54" fill="#000" opacity="0.45"/>
+  <g filter="url(#glow)">
+
+    <path d="M250 398c115-45 249-45 349 0 100-45 234-45 351 0" fill="none" stroke="#f1d087" stroke-width="24" stroke-linecap="round"/>
+    <path d="M250 430c38 162 253 176 330 20 10-20 30-34 50-34s40 14 50 34c77 156 292 142 330-20-112-58-240-54-330-4-48 27-112 27-160 0-90-50-218-54-330 4Z" fill="#101827" stroke="#f1d087" stroke-width="13"/>
+    <path d="M312 444c75-22 153-18 218 14-50 83-158 91-218-14Z" fill="url(#screen)" opacity="0.82"/>
+    <path d="M690 458c65-32 143-36 218-14-60 105-168 97-218 14Z" fill="url(#screen)" opacity="0.82"/>
+    <path d="M250 400l-95-80M950 400l95-80" stroke="#8b5cf6" stroke-width="13" stroke-linecap="round" opacity="0.8"/>
+    <path d="M410 350c120-56 260-56 380 0" fill="none" stroke="#fff2bf" stroke-width="7" opacity="0.32"/>
+
+  </g>
+  <text x="600" y="820" fill="#f7e7bb" font-family="Arial, Helvetica, sans-serif" font-size="40" text-anchor="middle" font-weight="800" letter-spacing=".5">Noir Prism Aviator</text>
+</svg>

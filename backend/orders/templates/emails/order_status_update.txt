@@ -1,0 +1,17 @@
+Hello {{ order.full_name }},
+
+Your {{ store.store_name }} order has been updated.
+
+Order number: {{ order_number }}
+New status: {{ status_label }}
+Updated: {{ updated_at }}
+{% if order.tracking_number %}Tracking number: {{ order.tracking_number }}
+{% endif %}
+
+Order total: {{ total_price }}
+Payment method: {{ payment_label }}
+
+Support:
+Phone: {{ store.phone }}
+WhatsApp: {{ store.whatsapp }}
+Email: {{ store.email }}

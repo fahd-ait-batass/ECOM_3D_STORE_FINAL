@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="bg" cx="52%" cy="34%" r="68%">
+      <stop offset="0%" stop-color="#2dd4ff" stop-opacity="0.42"/>
+      <stop offset="45%" stop-color="#e9c46a" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#151b29"/>
+      <stop offset="48%" stop-color="#f2d98f"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#2dd4ff"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" stop-opacity="0.82"/>
+      <stop offset="44%" stop-color="#2dd4ff" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#05070d" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="900" fill="#05070d"/>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="180" cy="205" r="5" fill="#2dd4ff" opacity="0.65"/>
+  <circle cx="1018" cy="168" r="4" fill="#e9c46a" opacity="0.6"/>
+  <circle cx="965" cy="612" r="7" fill="#2dd4ff" opacity="0.35"/>
+  <path d="M170 650C350 550 850 540 1030 650" fill="none" stroke="#2dd4ff" stroke-width="3" opacity="0.32"/>
+  <path d="M180 265C410 150 770 145 1015 272" fill="none" stroke="#e9c46a" stroke-width="2" opacity="0.24"/>
+  <ellipse cx="600" cy="740" rx="360" ry="54" fill="#000" opacity="0.45"/>
+  <g filter="url(#glow)">
+
+    <rect x="282" y="205" width="330" height="478" rx="58" fill="#111827" stroke="#e9c46a" stroke-width="12"/>
+    <rect x="588" y="205" width="330" height="478" rx="58" fill="#080d19" stroke="#2dd4ff" stroke-width="12"/>
+    <rect x="330" y="268" width="230" height="350" rx="24" fill="url(#screen)" opacity="0.94"/>
+    <rect x="640" y="268" width="230" height="350" rx="24" fill="url(#screen)" opacity="0.84"/>
+    <path d="M600 226v438" stroke="#f8e5ae" stroke-width="9" opacity="0.78"/>
+    <circle cx="825" cy="300" r="13" fill="#e9c46a"/>
+    <circle cx="790" cy="300" r="10" fill="#2dd4ff"/>
+    <path d="M390 562c60-70 123-67 178 0M686 562c52-64 110-63 164 0" fill="none" stroke="#fff7d6" stroke-width="7" opacity="0.32"/>
+
+  </g>
+  <text x="600" y="820" fill="#f7e7bb" font-family="Arial, Helvetica, sans-serif" font-size="40" text-anchor="middle" font-weight="800" letter-spacing=".5">Obsidian Fold Elite</text>
+</svg>

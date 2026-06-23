@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="bg" cx="55%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity=".38"/>
+      <stop offset="44%" stop-color="#f2cf7b" stop-opacity=".2"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="18" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <ellipse cx="600" cy="742" rx="360" ry="52" fill="#000" opacity=".45"/>
+  <g filter="url(#glow)" fill="none" stroke-linecap="round">
+    <path d="M335 460c0-176 107-294 265-294s265 118 265 294" stroke="#f2cf7b" stroke-width="46"/>
+    <path d="M390 450c0-126 82-216 210-216s210 90 210 216" stroke="#111827" stroke-width="32"/>
+    <rect x="260" y="422" width="160" height="250" rx="58" fill="#101827" stroke="#38bdf8" stroke-width="10"/>
+    <rect x="780" y="422" width="160" height="250" rx="58" fill="#101827" stroke="#38bdf8" stroke-width="10"/>
+    <rect x="304" y="474" width="82" height="144" rx="34" fill="#1f2937" stroke="#f2cf7b" stroke-width="5"/>
+    <rect x="814" y="474" width="82" height="144" rx="34" fill="#1f2937" stroke="#f2cf7b" stroke-width="5"/>
+  </g>
+</svg>

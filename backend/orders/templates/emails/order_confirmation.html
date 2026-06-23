@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <body style="margin:0;background:#070a12;color:#f8fafc;font-family:Arial,sans-serif;">
+    <div style="max-width:680px;margin:0 auto;padding:28px;">
+      <div style="border:1px solid rgba(242,207,123,.32);border-radius:18px;background:#101624;padding:28px;">
+        <p style="color:#f2cf7b;text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin:0 0 8px;">Order confirmed</p>
+        <h1 style="margin:0 0 12px;font-size:28px;">Thank you, {{ order.full_name }}</h1>
+        <p style="color:#aeb7c7;margin:0 0 22px;">Your {{ store.store_name }} order has been received and is now marked as {{ status_label }}.</p>
+
+        <div style="border-radius:14px;background:#0b101c;padding:18px;margin-bottom:22px;">
+          <p style="margin:0 0 8px;"><strong>Order number:</strong> {{ order_number }}</p>
+          <p style="margin:0 0 8px;"><strong>Payment:</strong> {{ payment_label }}</p>
+          <p style="margin:0;"><strong>Status:</strong> {{ status_label }}</p>
+          {% if order.tracking_number %}
+            <p style="margin:8px 0 0;"><strong>Tracking:</strong> {{ order.tracking_number }}</p>
+          {% endif %}
+        </div>
+
+        <h2 style="font-size:18px;margin:0 0 12px;">Products</h2>
+        {% for item in items %}
+          <div style="display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid rgba(255,255,255,.08);padding:10px 0;">
+            <span>{{ item.quantity }} x {{ item.name }}</span>
+            <strong>{{ item.line_total }}</strong>
+          </div>
+        {% endfor %}
+
+        <div style="margin-top:18px;border-radius:14px;background:#0b101c;padding:18px;">
+          <p style="display:flex;justify-content:space-between;margin:0 0 8px;"><span>Subtotal</span><strong>{{ subtotal }}</strong></p>
+          <p style="display:flex;justify-content:space-between;margin:0 0 8px;"><span>Coupon discount</span><strong>{{ discount_amount }}</strong></p>
+          <p style="display:flex;justify-content:space-between;margin:0 0 8px;"><span>Delivery</span><strong>{{ delivery_price }}</strong></p>
+          <p style="display:flex;justify-content:space-between;margin:0;font-size:20px;color:#f2cf7b;"><span>Total</span><strong>{{ total_price }}</strong></p>
+        </div>
+
+        <div style="margin-top:22px;color:#cbd5e1;">
+          <h2 style="font-size:18px;color:#f8fafc;">Delivery details</h2>
+          <p>{{ order.full_name }}<br>{{ order.phone }}{% if order.email %}<br>{{ order.email }}{% endif %}<br>{{ order.city }}, {{ order.address }}</p>
+        </div>
+
+        <p style="color:#aeb7c7;margin-top:26px;">
+          Questions? Contact {{ store.store_name }} at {{ store.phone }},
+          WhatsApp {{ store.whatsapp }}, or {{ store.email }}.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

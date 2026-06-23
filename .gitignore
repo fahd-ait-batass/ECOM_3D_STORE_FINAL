@@ -1,0 +1,44 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Node / React
+
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.vite/
+
+# Environment secrets
+
+.env
+.env.*
+!.env.example
+
+# Temporary files and logs
+
+.tmp/
+tmp/
+cache/
+*.tmp
+*.log
+
+# Generated uploads only
+
+media/uploads/
+backend/media/uploads/
+
+# Editor and operating system
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+backend/db.sqlite3

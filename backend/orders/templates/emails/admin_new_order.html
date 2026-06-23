@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <body style="margin:0;background:#070a12;color:#f8fafc;font-family:Arial,sans-serif;">
+    <div style="max-width:720px;margin:0 auto;padding:28px;">
+      <div style="border:1px solid rgba(56,189,248,.32);border-radius:18px;background:#101624;padding:28px;">
+        <p style="color:#38bdf8;text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin:0 0 8px;">Admin notification</p>
+        <h1 style="margin:0 0 12px;font-size:28px;">New order {{ order_number }}</h1>
+        <p style="color:#aeb7c7;margin:0 0 22px;">A customer has placed a new {{ store.store_name }} order.</p>
+
+        <div style="border-radius:14px;background:#0b101c;padding:18px;margin-bottom:22px;">
+          <p style="margin:0 0 8px;"><strong>Customer:</strong> {{ order.full_name }}</p>
+          <p style="margin:0 0 8px;"><strong>Phone:</strong> {{ order.phone }}</p>
+          <p style="margin:0 0 8px;"><strong>Email:</strong> {{ order.email|default:"Not provided" }}</p>
+          <p style="margin:0;"><strong>Address:</strong> {{ order.city }}, {{ order.address }}</p>
+        </div>
+
+        <h2 style="font-size:18px;margin:0 0 12px;">Items</h2>
+        {% for item in items %}
+          <div style="display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid rgba(255,255,255,.08);padding:10px 0;">
+            <span>{{ item.quantity }} x {{ item.name }}</span>
+            <strong>{{ item.line_total }}</strong>
+          </div>
+        {% endfor %}
+
+        <div style="margin-top:18px;border-radius:14px;background:#0b101c;padding:18px;">
+          <p style="display:flex;justify-content:space-between;margin:0 0 8px;"><span>Payment</span><strong>{{ payment_label }}</strong></p>
+          <p style="display:flex;justify-content:space-between;margin:0 0 8px;"><span>Coupon</span><strong>{{ order.coupon_code|default:"None" }}</strong></p>
+          <p style="display:flex;justify-content:space-between;margin:0 0 8px;"><span>Discount</span><strong>{{ discount_amount }}</strong></p>
+          <p style="display:flex;justify-content:space-between;margin:0 0 8px;"><span>Delivery</span><strong>{{ delivery_price }}</strong></p>
+          <p style="display:flex;justify-content:space-between;margin:0;font-size:20px;color:#38bdf8;"><span>Total</span><strong>{{ total_price }}</strong></p>
+        </div>
+
+        <p style="color:#aeb7c7;margin-top:26px;">Open the protected admin dashboard to confirm, process, and assign tracking.</p>
+      </div>
+    </div>
+  </body>
+</html>

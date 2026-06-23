@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="bg" cx="52%" cy="34%" r="68%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.42"/>
+      <stop offset="45%" stop-color="#d8b65f" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#171d2b"/>
+      <stop offset="48%" stop-color="#f1d991"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="900" fill="#05070d"/>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <path d="M170 650C350 550 850 540 1030 650" fill="none" stroke="#06b6d4" stroke-width="3" opacity="0.32"/>
+  <path d="M180 265C410 150 770 145 1015 272" fill="none" stroke="#d8b65f" stroke-width="2" opacity="0.24"/>
+  <ellipse cx="600" cy="740" rx="360" ry="54" fill="#000" opacity="0.45"/>
+  <g filter="url(#glow)">
+    <path d="M360 315h480c42 0 76 34 76 76v218c0 42-34 76-76 76H360c-42 0-76-34-76-76V391c0-42 34-76 76-76Z" fill="#101827" stroke="#d8b65f" stroke-width="12"/>
+    <circle cx="580" cy="502" r="118" fill="#05070d" stroke="#06b6d4" stroke-width="14"/>
+    <circle cx="580" cy="502" r="70" fill="none" stroke="#d8b65f" stroke-width="12"/>
+    <circle cx="580" cy="502" r="34" fill="#06b6d4" opacity="0.72"/>
+    <rect x="720" y="432" width="118" height="38" rx="19" fill="#d8b65f" opacity="0.72"/>
+    <rect x="720" y="514" width="142" height="30" rx="15" fill="#334155"/>
+    <path d="M310 385 190 312M310 620 190 702" stroke="#06b6d4" stroke-width="10" opacity="0.45"/>
+  </g>
+</svg>

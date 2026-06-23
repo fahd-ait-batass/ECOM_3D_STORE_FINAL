@@ -1,0 +1,22 @@
+New order received for {{ store.store_name }}.
+
+Order number: {{ order_number }}
+Customer: {{ order.full_name }}
+Phone: {{ order.phone }}
+Email: {{ order.email|default:"Not provided" }}
+City: {{ order.city }}
+Address: {{ order.address }}
+Payment method: {{ payment_label }}
+Status: {{ status_label }}
+
+Items:
+{% for item in items %}- {{ item.quantity }} x {{ item.name }} at {{ item.price }} = {{ item.line_total }}
+{% endfor %}
+
+Subtotal: {{ subtotal }}
+Coupon code: {{ order.coupon_code|default:"None" }}
+Coupon discount: {{ discount_amount }}
+Delivery: {{ delivery_price }}
+Final total: {{ total_price }}
+
+Open the protected admin dashboard to confirm, process, and assign tracking.
